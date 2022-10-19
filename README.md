@@ -2,9 +2,9 @@
     
 a GUI macOS app to downgrade compatible A6 and A7 devices to OTA signed firmwares.   
     
-![CI](https://img.shields.io/github/workflow/status/rA9stuff/LeetDown/LeetDown_CI?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/rA9stuff/leetdown?style=for-the-badge)
-![Licence](https://img.shields.io/github/license/rA9stuff/leetdown?style=for-the-badge)
+[![CI](https://img.shields.io/github/workflow/status/rA9stuff/LeetDown/LeetDown_CI?style=for-the-badge)](https://github.com/rA9stuff/LeetDown/actions)
+[![Stars](https://img.shields.io/github/stars/rA9stuff/leetdown?style=for-the-badge)](https://github.com/rA9stuff/LeetDown/stargazers)
+[![Licence](https://img.shields.io/github/license/rA9stuff/leetdown?style=for-the-badge)](https://github.com/rA9stuff/LeetDown/blob/master/LICENSE.md)
 <br/>
 <img align="right" src="https://i.imgur.com/5lI2lIo.png" width="130px" height="130px">
 ### Downloads
