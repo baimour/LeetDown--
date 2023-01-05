@@ -1,61 +1,61 @@
 # LeetDown
     
-a GUI macOS app to downgrade compatible A6 and A7 devices to OTA signed firmwares.   
+一个GUI MacOS应用程序，将兼容的A6和A7设备降级为OTA签名的固件
     
 [![CI](https://img.shields.io/github/actions/workflow/status/rA9stuff/LeetDown/ci.yml?branch=master&style=for-the-badge)](https://github.com/rA9stuff/LeetDown/actions)
 [![Stars](https://img.shields.io/github/stars/rA9stuff/leetdown?style=for-the-badge)](https://github.com/rA9stuff/LeetDown/stargazers)
 [![Licence](https://img.shields.io/github/license/rA9stuff/leetdown?style=for-the-badge)](https://github.com/rA9stuff/LeetDown/blob/master/LICENSE.md)
 <br/>
 <img align="right" src="https://i.imgur.com/5lI2lIo.png" width="130px" height="130px">
-### Downloads
-* [Latest notarized release (Recommended)](https://github.com/rA9stuff/LeetDown/releases)
-* [Nightly builds (Experimental)](https://nightly.link/rA9stuff/LeetDown/workflows/ci/master)
+### 下载
+* [Latest notarized release (推荐)](https://github.com/rA9stuff/LeetDown/releases)
+* [Nightly builds (实验)](https://nightly.link/rA9stuff/LeetDown/workflows/ci/master)
 
 
-# Compatibility   
+# 兼容   
 
-### iOS Device Compatibility
+### 兼容的iOS设备
 
-| iOS 8.4.1 Downgrade | iOS 10.3.3 Downgrade |
+| iOS 8.4.1 降级 | iOS 10.3.3 降级 |
 | :---         | :---         |
 | iPhone 5   | iPhone 5s   |
-| iPad 4   | iPad Mini 2 (excluding J87AP)   |
+| iPad 4   | iPad Mini 2 (除了 J87AP)   |
 | -   | iPad Air   |
    
    
-### macOS Compatibility
+### 兼容的MacOS
 
 | Intel Macs    | ASi Macs (Rosetta 2) |
 | --- | --- |
-| macOS 10.13 +   | macOS 11.0 + |
+| MacOS 10.13 +   | MacOS 11.0 + |
 
-### Virtual Machines and Hackintosh Systems
-LeetDown is **not** compatible with virtual machines. Some hackintosh systems were successful running LeetDown, though, exploiting issues you encounter on environments other than real Mac hardware is up to you to resolve. Please do not open an issue for this.
+### 虚拟机和黑苹果
+LeetDown与虚拟机不兼容，一些黑苹果系统成功地运行了LeetDown，但是，利用您在真实Mac硬件以外的环境中遇到的问题取决于您的解决。请不要为此创建问题
 
-# Installation
+# 安装
 
-Mount the `LeetDown_[VERSION].dmg` and drag the `LeetDown.app` to your `/Applications` folder.
+打开 `LeetDown_[VERSION].dmg` 并将 `LeetDown.app` 拖到 `/Applications` 文件夹
 
-Follow the instructions shown in the app.
+按照应用程序中显示的说明进行操作
 
-# Troubleshooting
-### A7 devices and Apple Silicon Macs   
+# 疑难解答
+### A7设备和Apple Silicon Mac
 
-* Due to the USB stack of ASi macs, the device will disappear after LeetDown uploads iBSS. When you get the prompt `[+] Device was lost, reconnect the USB cable to your mac to resume the upload process`, do what it says and the restore will resume automatically.
-* Make sure to reconnect the cable **to your mac**. You don't need to replug the cable to your iOS device.
+* 由于Asi Macs的USB堆栈，在LeetDown上传iBSS后，设备将消失。当您收到提示 `[+] 设备丢失，请将USB线重新连接到您的Mac以恢复上传过程`时，按照提示进行操作，降级将自动恢复
+* 确保将数据线**重新连接到您的Mac**您无需将数据线重新插入iOS设备
 
 ### Stuck at exploiting or exploitation failure
 
-* Make sure you're not using any USB Hubs or type-c to lightning cables. If your mac has only USB-C ports, use a lightning to type-a cable with a USB type-c to type-a converter.
-* Make sure you're not running LeetDown under a virtual machine. Check [compatiblity](https://github.com/rA9stuff/LeetDown#compatibility) here.
-* Re-enter DFU mode and try exploiting again with LeetDown.
-* If it's still not working, [download iPwnder-lite](https://github.com/dora2-iOS/ipwnder_lite) and exploit your device manually.   
+* 确保您没有使用任何USB集线器或type-c到Lightning，如果您的Mac只有USB-C接口，请使用Lightning转type-a和type-c转type-a转换器
+* 确保您没有在虚拟机下运行LeetDown，查看 [compatiblity](https://github.com/rA9stuff/LeetDown#compatibility)
+* 重新进入DFU模式，并尝试使用LeetDown再次漏洞攻击
+* 如果它仍然不起作用，[下载 iPwnder-lite](https://github.com/dora2-iOS/ipwnder_lite) 并手动利用漏洞攻击您的设备
 
-### Failed to restore device
+### 无法降级设备
 
-* Update to latest iOS version with iTunes/Finder/idevicerestore then try again.
-* Check if your USB cable is working fine.
-* Try with a different USB port (or adapter if running on Apple Silicon).
+* 使用iTunes/Finder/idevicerestore更新至最新iOS版本，然后重试
+* 检查USB线是否正常工作
+* 尝试使用不同的USB接口 (或适配器，如果在Apple Silicon上运行)
 
 
 # Build Instructions  
@@ -69,29 +69,29 @@ open `.xcworkspace` and run it
 run `pod install`   
 run `xcodebuild -workspace LeetDown.xcworkspace -scheme LeetDown_M` 
 
-# Having issues?
+# 有问题？
 
-* Enable debugging by clicking the box in LeetDown's settings.
-* Open an issue, fill the template and attach the `LDLog.txt` to it from your `~/Documents` folder
+* 通过点击LeetDown设置中的框启用调试模式
+* 打开一个问题，填写模板并从 `~/Documents` 文件夹将 `LDLog.txt` 添加到其中
 
-# Supporters  
+# 支持者  
 * Will Kellner
 * qqjqqj
 
-# Credits:
+# 致谢：
 
-* [@axi0mX](https://twitter.com/axi0mX) for checkm8 exploit.
-* [@tihmstar](https://twitter.com/tihmstar) for futurerestore.
-* [@Cryptiiiic](https://twitter.com/Cryptiiiic) for updated futurerestore.
-* [@\_m1sta](https://twitter.com/_m1sta) for updated futurerestore.
-* [@dora2ios](https://twitter.com/dora2ios) for iPwnder-lite.
-* [@mosk_i](https://twitter.com/mosk_i) for iBoot patches and internal testing.
-* [@libimobiledev](https://twitter.com/libimobiledev) for libirecovery.
+* [@axi0mX](https://twitter.com/axi0mX) for checkm8 exploit
+* [@tihmstar](https://twitter.com/tihmstar) for futurerestore
+* [@Cryptiiiic](https://twitter.com/Cryptiiiic) for updated futurerestore
+* [@\_m1sta](https://twitter.com/_m1sta) for updated futurerestore
+* [@dora2ios](https://twitter.com/dora2ios) for iPwnder-lite
+* [@mosk_i](https://twitter.com/mosk_i) for iBoot patches and internal testing
+* [@libimobiledev](https://twitter.com/libimobiledev) for libirecovery
 * [@ConsoleLogLuke](https://twitter.com/ConsoleLogLuke) for helping with the dependencies and scripts for versions < 2.0
-* [ZipArchive](https://github.com/ZipArchive/ZipArchive) for SSZipArchive. 
-* [AFNetworking](https://github.com/AFNetworking/AFNetworking) for AFNetworking.
-* [@alitek123](https://twitter.com/alitek123) for OTA BuildManifests. 
-* [@exploit3dguy](https://twitter.com/exploit3dguy) for private testing.
-* [@m3t0ski](https://twitter.com/m3t0ski) for private testing.
-* [@AyyItzRob123](https://twitter.com/AyyItzRob123) for private testing.
-* [Mini-Exploit](https://github.com/Mini-Exploit) for private testing.
+* [ZipArchive](https://github.com/ZipArchive/ZipArchive) for SSZipArchive
+* [AFNetworking](https://github.com/AFNetworking/AFNetworking) for AFNetworking
+* [@alitek123](https://twitter.com/alitek123) for OTA BuildManifests
+* [@exploit3dguy](https://twitter.com/exploit3dguy) for private testing
+* [@m3t0ski](https://twitter.com/m3t0ski) for private testing
+* [@AyyItzRob123](https://twitter.com/AyyItzRob123) for private testing
+* [Mini-Exploit](https://github.com/Mini-Exploit) for private testing
