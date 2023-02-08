@@ -41,14 +41,14 @@ LeetDown与虚拟机不兼容，一些黑苹果系统成功地运行了LeetDown�
 # 疑难解答
 ### A7设备和Apple Silicon Mac
 
-* 由于Asi Macs的USB堆栈，在LeetDown上传iBSS后，设备将消失。当您收到提示 `[+] 设备丢失，请将USB线重新连接到您的Mac以恢复上传过程`时，按照提示进行操作，降级将自动恢复
+* 由于Asi Macs的USB堆栈，在LeetDown上传iBSS后，设备将消失。当您看到提示 `[+] 设备丢失，请将USB线重新连接Mac恢复上传进程`时，按照提示进行操作，降级将自动恢复
 * 确保将数据线**重新连接到您的Mac**您无需将数据线重新插入iOS设备
 
 ### Stuck at exploiting or exploitation failure
 
 * 确保您没有使用任何USB集线器或type-c到Lightning，如果您的Mac只有USB-C接口，请使用Lightning转type-a和type-c转type-a转换器
 * 确保您没有在虚拟机下运行LeetDown，查看 [compatiblity](https://github.com/rA9stuff/LeetDown#compatibility)
-* 重新进入DFU模式，并尝试使用LeetDown再次漏洞攻击
+* 重新进入DFU模式，使用LeetDown再次利用漏洞
 * 如果它仍然不起作用，[下载 iPwnder-lite](https://github.com/dora2-iOS/ipwnder_lite) 并手动利用漏洞攻击您的设备
 
 ### 无法降级设备
@@ -57,19 +57,7 @@ LeetDown与虚拟机不兼容，一些黑苹果系统成功地运行了LeetDown�
 * 检查USB线是否正常工作
 * 尝试使用不同的USB接口 (或适配器，如果在Apple Silicon上运行)
 
-
-# Build Instructions  
-### With Xcode
-`cd` to project directory   
-run `pod install`   
-open `.xcworkspace` and run it    
-
-### With CLI
-`cd` to project directory   
-run `pod install`   
-run `xcodebuild -workspace LeetDown.xcworkspace -scheme LeetDown_M` 
-
-# 有问题？
+# 遇到问题？
 
 * 通过点击LeetDown设置中的框启用调试模式
 * 打开一个问题，填写模板并从 `~/Documents` 文件夹将 `LDLog.txt` 添加到其中
